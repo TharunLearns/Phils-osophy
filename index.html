@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phil's-osophy</title>
+</head>
+<body style="font-family: sans-serif; padding: 2rem;">
+  <h1>Phil Dunphy Says:</h1>
+  <p id="quote" style="font-size: 1.5rem; margin-top: 1rem;"></p>
+
+  <script>
+    const quotes = [
+      "Always look people in the eye. Even if they’re blind.",
+      "If you love something, set it free. Unless it's a tiger.",
+      "The most amazing things that can happen to a human being will happen to you, if you just lower your expectations.",
+      "Dance until your feet hurt. Sing until your lungs hurt. Act until you’re William Hurt.",
+      "Success is 1% inspiration, 98% perspiration, and 2% attention to detail.",
+      "Take a lesson from parakeets: If you’re ever feeling lonely, just eat in front of a mirror.",
+      "Watch a sunrise at least once a day.",
+      "You can tell a lot about a person from his biography."
+    ];
+
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quote").innerText = quotes[randomIndex];
+  </script>
+</body>
+</html>
